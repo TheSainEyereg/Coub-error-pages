@@ -10,6 +10,14 @@ This project was originally created as a mockery of "modern" web developers who 
 - The ability to share a link to the error page with a specific Coub.
 - 3 copyright notes.
 
+### How to add to your website:
+```sh
+git submodule add https://github.com/TheSainEyereg/Coub-error-pages errorPages
+#or
+git clone https://github.com/TheSainEyereg/Coub-error-pages errorPages
+```
+_p.s. Note that "errorPages" directory should be in the root of your website_
+
 ---
 
 Since recently, this error pages [can be seen on my friend's website](https://vazgen.space/assets)
