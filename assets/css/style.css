@@ -1,0 +1,111 @@
+html, body {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16pt;
+  background-color: #0D0D0D;
+  color: #fff;
+
+  user-select: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {margin: 10px 0}
+
+a {
+  color: #fff;
+  text-decoration: underline;
+}
+a:hover {opacity: 0.8}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {text-align: center}
+
+.coubContainer {
+	font-size: 14pt;
+	text-align: left;
+	width: min-content;
+	margin: auto;
+	margin-top: 30px;
+}
+.coubContainer p {margin: 0;}
+.coubPlayer {
+	width: 720px;
+	height: 405px;
+}
+
+footer {
+	font-size: 10pt;
+
+	position: fixed;
+	bottom: 0;
+	left: 0;
+
+	padding: 1px 2px;
+	width: calc(100% - 4px);
+}
+
+footer, footer .copyright {display: flex;} 
+footer .olejka {
+	margin-left: 5px;
+	opacity: 0;
+	transition: .8s;
+}
+footer .copyright:hover .olejka {opacity: 1}
+
+footer #share {margin-left: auto}
+
+@media screen and (max-width: 900px) {
+	body {
+		font-size: 14pt;
+	}
+	.coubContainer {
+		font-size: 12pt;
+	}
+	.coubPlayer {
+		width: 560px;
+		height: 315px;
+	}
+	footer {
+		font-size: 9pt;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	body {
+		font-size: 12pt;
+	}
+	.coubContainer {
+		font-size: 10pt;
+	}
+	.coubPlayer {
+		width: 480px;
+		height: 270px;
+	}
+	footer {
+		font-size: 8pt;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	body {
+		font-size: 10pt;
+	}
+	.coubContainer {
+		font-size: 8pt;
+	}
+	.coubPlayer {
+		width: 360px;
+		height: 210px;
+	}
+}
